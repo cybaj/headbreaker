@@ -132,7 +132,7 @@ class Canvas {
     this.proximity = proximity;
     this.fixed = fixed;
     /** @type {Painter} */
-    this._painter = painter || new window['headbreaker']['painters']['Konva']();
+    this._painter = painter;
     this._initialize();
     this._painter.initialize(this, id);
     /** @type {import('./vector').Vector} */
